@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather API</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="search">
+          <input type="text" placeholder="Enter City Name" id="search-txt" />
+          <a id="search-btn" href="#"><i class="fas fa-search"></i></a>
+        </div>
+      </header>
+
+      <main id="main">
+        <div class="city-icon">
+          <div class="city-icon-holder">
+            <p class="city-heading">Place / City</p>
+            <h2 id="city-name"></h2>
+            <img src="" alt="" id="icon" />
+            <h4 class="description"></h4>
+          </div>
+        </div>
+
+        <div class="temperature">
+          <p class="temp-heading">Temperature</p>
+          <div id="temp"></div>
+        </div>
+
+        <div class="humidity">
+          <p class="humidity-heading">Humidity</p>
+          <div id="humidity-div"></div>
+        </div>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
